@@ -25,6 +25,10 @@ public class NBValidateXML {
         Parser dom = new Parser();
         try {
             link = dom.parseDocument("/Users/davide/Desktop/TECNOLOGIE/LABORATORIO/CALENDAR/Consigli_di_classe_Circolari.xml");
+            System.out.println("Numero di link: "+link.size());
+            for(int i=0; i<link.size(); i++){
+                System.out.println(i+" "+link.get(i).toString());
+            }
         } catch (ParserConfigurationException | SAXException | IOException exception) {
             System.out.println("Errore!");
         }

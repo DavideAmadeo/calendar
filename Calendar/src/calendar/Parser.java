@@ -53,7 +53,7 @@ public class Parser {
     }
     
     private String GetLink(Element element){
-        return element.getAttribute("href");
+        return element.getAttribute("");
     }
     
     // restituisce il valore testuale dell’elemento figlio specificato
